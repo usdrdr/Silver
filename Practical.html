@@ -3,53 +3,92 @@
 <head>
 <title>WEB- HTML</title>
 <meta charset="utf-8"> 
+<style>
+    a{
+        text-decoration:none;
+        color:black;
+        font-style:italic
+    }
 
+    h1 {
+    font-size: 50px;
+    font-style:italic;
+    text-align:center;
+    border-bottom: gray 1px solid;
+    margin:0;
+    padding:20px;
+    }
+    ol{
+    border-right:1px gray solid;
+    width:200px;
+    margin:0px;
+    padding-top:20px;
+    padding-left:40px;
+    padding-right: 20px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 260px 1fr;
+    }
+    #jin{
+        padding-left: 25px;
+    }
+    body{
+        margin:0; 
+    }
+</style>
 </head>
  
 
 <body>
 
     <h1><a href="index.html">AD History from Iron to Silver</a></h1>
-    <ol>
-    <li><a href="1.html">Iron</a></li>
-    <li><a href="2.html">Bronze</a></li> 
-    <li><a href="3.html">Promotion Match (승급전)</a></li>
-    <li><a href="Practical.html">Silver</a></li>
- 
     
-    <h2>Silver 4</h2>
-    <img src="silver.jpg" width="700" height="300">
-    <a href="https://www.op.gg/summoner/userName=갱안오먼레고삼킴" target="_blank"><img src="silver defeat.jpg" width="400" height="300"></a>
-    <p> 이제는 당당히 실버로 올라왔다 
-        <br>하지만 승격한 후 3연패를 박아버려 0point에서 비참하게 눈물흘리는 중이다.
-        <br>실버로 올라온만큼 실력을 더 키워서 앞으로 더 나아가야겠다.
-        <br>목표는 골드이상을 찍어 이번 시즌에는 승리의 스킨을 받는 것이다.
-        <br>계속해서 롤을 연습해야할 필요가 있겠다.
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html" style="color:whitesmoke;">Iron</a></li>
+            <li><a href="2.html" style="color:whitesmoke;">Bronze</a></li> 
+            <li><a href="3.html" style="color:whitesmoke;">Promotion Match (승급전)</a></li>
+            <li><a href="Practical.html"style="color:plum;">Silver</a></li>
+            </ol>
+         
+            <div id="jin">
+                <h2>Silver 4</h2>
+            <img src="silver.jpg" width="500" height="300">
+            <a href="https://www.op.gg/summoner/userName=갱안오먼레고삼킴" target="_blank"><img src="silver defeat.jpg" width="400" height="300"></a>
+            <p> 이제는 당당히 실버로 올라왔다 
+                <br>하지만 승격한 후 3연패를 박아버려 0point에서 비참하게 눈물흘리는 중이다.
+                <br>실버로 올라온만큼 실력을 더 키워서 앞으로 더 나아가야겠다.
+                <br>목표는 골드이상을 찍어 이번 시즌에는 승리의 스킨을 받는 것이다.
+                <br>계속해서 롤을 연습해야할 필요가 있겠다.
+            </p>
+        
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/0Szy7lKtNAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/92lsu0LT6jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <p><div id="disqus_thread"></div>
+           <script>
+               /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+               /*
+               var disqus_config = function () {
+               this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+               this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+               };
+               */
+               (function() { // DON'T EDIT BELOW THIS LINE
+               var d = document, s = d.createElement('script');
+               s.src = 'https://silver-6.disqus.com/embed.js';
+               s.setAttribute('data-timestamp', +new Date());
+               (d.head || d.body).appendChild(s);
+               })();
+           </script>
+           <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+            </div>
+    </div>
 
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/0Szy7lKtNAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <iframe width="400" height="250" src="https://www.youtube.com/embed/92lsu0LT6jk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-   <p><div id="disqus_thread"></div>
-   <script>
-       /**
-       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-       /*
-       var disqus_config = function () {
-       this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-       this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-       };
-       */
-       (function() { // DON'T EDIT BELOW THIS LINE
-       var d = document, s = d.createElement('script');
-       s.src = 'https://silver-6.disqus.com/embed.js';
-       s.setAttribute('data-timestamp', +new Date());
-       (d.head || d.body).appendChild(s);
-       })();
-   </script>
-   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-
+   
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
